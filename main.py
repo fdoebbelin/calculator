@@ -1,16 +1,27 @@
-# This is a sample Python script.
-
-# Press Umschalt+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+def add(a, b):
+    return a + b
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Strg+F8 to toggle the breakpoint.
+def subtract(a, b):
+    return a - b
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def multiply(a, b):
+    return a * b
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+
+def divide(a, b):
+    if b != 0:
+        return a / b
+    else:
+        return "Error: Division durch Null!"
+
+
+if __name__ == "__main__":
+    print("Willkommen zum einfachen Taschenrechner!")
+    num1 = float(input("Geben Sie die erste Zahl ein: "))
+    num2 = float(input("Geben Sie die zweite Zahl ein: "))
+    print(f"Addition: {add(num1, num2)}")
+    print(f"Subtraktion: {subtract(num1, num2)}")
+    print(f"Multiplikation: {multiply(num1, num2)}")
+    print(f"Division: {divide(num1, num2)}")
